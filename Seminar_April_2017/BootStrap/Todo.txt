@@ -10,7 +10,7 @@ Bootstrap Required For Résumé
 			Browser compatibility: Bootstrap is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Safari, and Opera)
 
 
-4. 	Components of bootstrap
+2. 	Components of bootstrap
 
 		http://getbootstrap.com/components/
 
@@ -21,13 +21,13 @@ Bootstrap Required For Résumé
 
 	Theory : Use of various components of bootstrap
 
-5.	Link bootstrap to your page using
+3.	Link bootstrap to your page using
 		
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 
 	Theory : Similary to linking custom css to your page
 
-3.	Responsive to mobile devices
+4.	Responsive to mobile devices
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,7 +36,7 @@ Bootstrap Required For Résumé
 			 The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
 			The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.
 
-4.	Containers
+5.	Containers
 		
 		class="container"
 		class="container-fluid"
