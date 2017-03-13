@@ -1,0 +1,325 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Testing Components to be used</title>
+	<!-- Linking Bootstrap -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+
+	<!-- BootStrap Js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container"></div>
+	<div class="container-fluid"></div>
+
+	<div c;ass="container">
+		<!-- Text Alignment  -->
+		<p class="text-left">Left aligned text.</p>
+		<p class="text-center">Center aligned text.</p>
+		<p class="text-right">Right aligned text.</p>
+		<p class="text-justify">Justified text.</p>
+		<p class="text-nowrap">No wrap text.</p>
+	</div>
+
+	<!-- Image without responsiveness -->
+	<img src="StarWars.jpg"/>
+
+	<!-- image with responsiveness -->
+	<img src="StarWars.jpg" class="img-responsive"/>
+
+	<!-- Button Example -->
+	<button>Hello</button>
+
+	<!-- Button With Bootstrap -->
+	<button class="btn">Hello world</button>
+	
+	<br>
+
+	<button class="btn btn-block">Submit</button>
+
+	<!-- Different Types of colors -->
+	<button type="button" class="btn btn-default">Default</button>
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-success">Success</button>
+	<button type="button" class="btn btn-info">Info</button>
+	<button type="button" class="btn btn-warning">Warning</button>
+	<button type="button" class="btn btn-danger">Danger</button>
+	<button type="button" class="btn btn-link">Link</button>
+
+	<br><br>
+
+	<!-- Tables -->
+	<table class="table table-hover">
+	    <thead>
+	      <tr>
+	        <th>Firstname</th>
+	        <th>Lastname</th>
+	        <th>Email</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td>A</td>
+	        <td>B</td>
+	        <td>ab@example.com</td>
+	      </tr>
+	      <tr>
+	        <td>C</td>
+	        <td>D</td>
+	        <td>CD@example.com</td>
+	      </tr>
+	      <tr>
+	        <td>X</td>
+	        <td>Y</td>
+	        <td>XY@example.com</td>
+	      </tr>
+	    </tbody>
+	</table>
+
+	<!-- Jumbotron -->
+	<!-- with container -->
+	<div class="container">
+		<div class="jumbotron">
+			Hello world
+		</div>
+	</div>
+
+	<!-- with container-fluid -->
+	<div class="container-fluid">
+		<div class="jumbotron">
+			Hello world
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="well well-sm">Small Well</div>
+		<div class="well">Large Well</div>
+		<div class="well well-lg">Large Well</div>
+	</div>
+
+	<!-- Alerts -->
+	<!-- Basic Alerts -->
+	<div class="container">
+		<div class="alert alert-success">
+		  <strong>Success!</strong> Indicates a successful or positive action.
+		</div>
+
+		<div class="alert alert-info">
+		  <strong>Info!</strong> Indicates a neutral informative change or action.
+		</div>
+
+		<div class="alert alert-warning">
+		  <strong>Warning!</strong> Indicates a warning that might need attention.
+		</div>
+
+		<div class="alert alert-danger">
+		  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+		</div>
+	</div>
+
+	<!-- Alert with link -->
+	<div class="container">
+		<div class="alert alert-success">
+ 			<strong>Success!</strong> You should <a href="http://www.google.com" class="alert-link">read this message</a>.
+		</div>
+	</div>
+	<div class="container">
+	  <p>The a element with class="close" and data-dismiss="alert" is used to close the alert box.</p>
+	  <p>The alert-dismissible class adds some extra padding to the close button.</p>
+	  <div class="alert alert-success alert-dismissable">
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+	    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+	  </div>
+	  <div class="alert alert-info alert-dismissable">
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+	    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+	  </div>
+	  <div class="alert alert-warning alert-dismissable">
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+	    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+	  </div>
+	  <div class="alert alert-danger alert-dismissable">
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+	    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+	  </div>
+	</div>
+
+	<!-- Badges -->
+	<div class="container">
+		<a href="#">PHP <span class="badge">Rookie</span></a><br>
+		<a href="#">Html <span class="badge">Pro</span></a><br>
+		<a href="#">Js <span class="badge">Pro</span></a>
+	</div>
+
+	<br>
+
+	<!-- Progress Bars -->
+	<div class="container">
+		<div class="progress">
+		  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+		  aria-valuemin="0" aria-valuemax="100" style="width:40%">
+		    PHP
+		  </div>
+		</div>
+
+		<div class="progress">
+		  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60"
+		  aria-valuemin="0" aria-valuemax="100" style="width:50%">
+		    Python
+		  </div>
+		</div>
+
+		<div class="progress">
+		  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80"
+		  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+		    JQuery
+		  </div>
+		</div>
+
+		<div class="progress">
+		  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+		  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+		    Java
+		  </div>
+		</div>
+	</div>
+
+	<!-- Collapse -->
+	<div class="container">
+	  <h2>More about me</h2>
+	  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#aboutMe">Check Out</button>
+	  <div id="aboutMe" class="collapse">
+	    I am this, that . I know that and this. etc.....
+	  </div>
+	</div>
+
+	<br>
+	<br>
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">MyName</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#">What I know</a></li>
+	      <li><a href="#">Projects</a></li>
+	      <li><a href="#">More about me</a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<br>
+	<br>
+
+	<!-- Media Objects -->
+	<div class="container">
+		<!-- Left-aligned media object -->
+	  	<div class="media">
+	    	<div class="media-left">
+	      		<img src="user.png" class="media-object" style="width:60px">
+	    	</div>
+	    	<div class="media-body">
+	      		<h4 class="media-heading">Harshal Dange</h4>
+	      		<p>Hard Working, Awesome, </p>
+	    	</div>
+	  	</div>
+	  	<hr>
+	  
+	  	<!-- Right-aligned media object -->
+	  	<div class="media">
+	    	<div class="media-body">
+	      		<h4 class="media-heading">Right-aligned</h4>
+	      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	    	</div>
+	   		<div class="media-right">
+	      		<img src="user.png" class="media-object" style="width:60px">
+	    	</div>
+	  	</div>
+	</div>
+
+	<br>
+	<br>
+
+	<!-- MODAL -->
+	<!-- Trigger the modal with a button -->
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModal">Open Modal</button>
+
+	<!-- Modal -->
+	<div id="exampleModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        	<h4 class="modal-title">Header</h4>
+		      	</div>
+		      	<div class="modal-body">
+		        	<p>Some text</p>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      	</div>
+		    </div>
+		</div>
+	</div>
+
+	<!-- Grid Layout -->
+	<!-- Equal Spacing -->
+	<div class="container">
+		<div class="row">
+		  <div class="col-sm-4">.col-sm-4</div>
+		  <div class="col-sm-4">.col-sm-4</div>
+		  <div class="col-sm-4">.col-sm-4</div>
+		</div>
+	</div>
+
+	<!-- Unequal Spacing -->
+	<div class="container">
+		<div class="row">
+		  <div class="col-sm-3">.col-sm-3</div>
+		  <div class="col-sm-6">.col-sm-6</div>
+		  <div class="col-sm-3">.col-sm-3</div>
+		</div>
+	</div>
+
+	<!-- Nested -->
+	<div class="container">
+		<div class="row">
+		    <div class="col-sm-8" style="background-color:lavender;">.col-sm-8
+		      	<div class="row">
+		        	<div class="col-sm-6" style="background-color:lightcyan;">.col-sm-6</div>
+		        		<div class="col-sm-6" style="background-color:lightgray;">.col-sm-6</div>
+		      		</div>
+		    	</div>
+		 	<div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+
+	<!-- Glyphicons -->
+	<div class="container">
+		<button type = "button" class = "btn btn-default btn-lg">
+		   <span class = "glyphicon glyphicon-user"></span>
+		   User
+		</button>
+		<button type = "button" class = "btn btn-default btn-sm">
+		   <span class = "glyphicon glyphicon-arrow-down"></span> 
+		   Download
+		</button>
+		<button type ="button" class = "btn btn-default btn-xs">
+		   <span class = "glyphicon glyphicon-folder-open"></span> 
+		   Folder
+		</button>
+	</div>
+</body>
+</html>
